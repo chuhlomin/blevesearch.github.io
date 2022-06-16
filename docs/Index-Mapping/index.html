@@ -312,7 +312,7 @@ blogMapping.AddFieldMappingsAt(&quot;name&quot;, nameFieldMapping)
 <pre><code class="language-go">author := bleve.NewDocumentMapping()
 authorNameFieldMapping := bleve.NewTextFieldMapping()
 authorNameFieldMapping.Store = false
-author.AddFieldMappingsAt(&quot;name&quot;, authorFieldNameMapping)
+author.AddFieldMappingsAt(&quot;name&quot;, authorNameFieldMapping)
 authorEmailFieldMapping := bleve.NewTextFieldMapping()
 authorEmailFieldMapping.IncludeInAll = false
 author.AddFieldMappingsAt(&quot;email&quot;, authorEmailFieldMapping)
